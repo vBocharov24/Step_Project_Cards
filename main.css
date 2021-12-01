@@ -1,0 +1,444 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.section {
+	padding: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input {
+	display: block;
+  height: calc(2.25rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+.section-header {
+	padding: 5px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.header-title {
+	font-size: 30px;
+	color: #444;
+}
+
+.btn-hiden{
+	display: none;
+}
+#root {
+	background-color: rgb(230, 230, 230);
+	border-radius: 10px;
+	border: 2px solid rgb(148, 148, 148);
+	padding: 0 10px;
+}
+
+.box-filter-form {
+	display: flex;
+	padding-top:  15px;
+	justify-content: space-between;
+}
+
+.box-filter-input {
+	width: 100%;
+	border-radius: 10px;
+	margin: 5px 10px;
+}
+.search-select {
+	border: 2px solid rgb(148, 148, 148);
+	border-radius: 10px;
+	height: 40px;
+	margin-left: 4px;
+	color: #444; 
+	font-weight: 700; 
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+}
+.box-filter-btnsearch {
+	display: block;
+	margin-top: 23px;
+}
+
+#username {
+	color: cadetblue;
+}
+.no-visit-box {
+	font-size: 40px;
+	text-align: center;
+	color: #555;
+	letter-spacing: 3px;
+}
+.card-visit_box {
+		text-align: center;
+}
+#card-visit {
+	max-width: 1100px;
+	position: relative;
+	display: inline-flex;	
+	align-items:flex-start;
+	flex-wrap: wrap;
+	grid-gap: 30px;
+}
+
+
+textarea {
+	outline: none;
+	border: none;
+	font-size: 14px;
+	background: #000;
+	overflow: auto;
+	outline: none;
+	padding: 8px;
+	background-color: rgb(160, 149, 149);
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	width: 100%;
+}
+.form {
+
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.form-div-btn-close {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background-image: url(./img/Delete-80_icon-icons.com_57340.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	cursor: pointer;
+	right: 15px;
+	top: 9px;
+}
+.form-btn-close {
+
+
+}
+.form-div-item {
+	padding: 5px;
+	margin-bottom: 15px;
+	width: 250px;
+}
+
+.undefined__priority {
+	height: 30px;
+	margin-left: 20px;
+	
+	border: none;
+}
+
+.btn {
+	width: 100px;
+	background: rgb(25, 128, 106);
+	color: white;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	line-height: 30px;
+	margin-left: 10px;
+}
+.card-btn-show-more {
+	width: 150px;
+	background-image: url('./img/arrow-234.png');
+	background-repeat: no-repeat;
+	background-position: 93% 45%;
+	background-size: 20px 20px;
+	padding-left: 15px;
+	text-align: start;
+	}
+/* -----------select-doctor-container------ */
+.select-doctor-container {
+	left: 35%;
+	top: 7px;
+text-transform: uppercase;
+width: 250px;
+border-radius: 10px;
+margin: 0 auto;
+}
+.select-doctor-container label {
+	padding: 5px 20px;
+}
+#doctor {
+font-size: 16px; 
+font-family: sans-serif; 
+font-weight: 700; 
+color: #444; 
+line-height: 1.3; 
+padding: .6em 1.4em .5em .8em;
+max-width: 663px; 
+box-sizing: border-box; 
+margin: 0; 
+border: 1px solid rgb(148, 148, 148);
+box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+border-radius: .5em;
+background-color: #fff;
+}
+
+.visit-card-list{
+	list-style: none;
+}
+
+.visit-card-box {
+	border: 1px solid rgb(148, 148, 148);
+	border-radius: 15px;
+	background-color: rgb(230, 230, 230);
+	width: 300px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: rgb(63, 58, 58);
+
+	padding: 8px;
+	line-height: 20px;
+}
+.response-box-done {
+	background: linear-gradient(90deg, rgba(123,126,133,0.6222864145658263) 0%, rgba(152,152,163,1) 96%);
+	opacity: 0.7;
+}
+
+.visit-card-item {
+	margin-bottom: 5px;
+}
+
+.visit-card-item.expan {
+	display: none;
+}
+
+.expanded .visit-card-item.expan {
+	display: block;
+}
+
+.card-title {
+	font-size: 24px;
+	text-align: center;
+	color: #000;
+}
+
+.card-btn-close {
+	float: right;
+	border: none;
+	cursor: pointer;
+	background: url('./img/Delete-80_icon-icons.com_57340.png') center no-repeat;
+	width: 30px;
+	height: 30px;
+	
+}
+.card-btn-close:active {
+
+	border-radius: 10px;
+	border: 3px solid rgb(197, 32, 32);
+}
+
+.card-btn-edit-disabled{
+	background: rgb(18, 48, 41);
+}
+
+.visit-card-list-done{
+	background-color: rgba(43, 43, 43, 0.433);
+}
+
+.card-btn-open-done {
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-color: rgb(208, 215, 228);
+	border: 1px solid rgb(148, 148, 148);
+	border-radius: 5px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	color: #555;
+	font-size: inherit;
+
+	overflow: hidden;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.card-img {
+	width: 230px;
+	height: 232px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 2px solid rgb(148, 148, 148);
+}
+.card-img .card-img-disabled {
+	/* background: linear-gradient(90deg, rgba(123,123,133,1) 0%, rgba(152,152,163,1) 96%, rgba(0,212,255,1) 100%);
+	background: linear-gradient(90deg, rgba(123,123,133,1) 0%, rgba(152,152,163,1) 96%, rgba(0,212,255,1) 100%);
+	background-color:rgba(0,0,0,.3); */
+	height:100%;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+}
+	
+.visit-card-item-text {
+	color: rgb(102, 102, 102);
+	letter-spacing: 1px;
+}
+
+.show-less {
+	background-image: url('./img/north-arrow-235.png');
+}
+.btn-create-visit {
+	width: 150px;
+}
+.label-input{
+	font-size: 16px;
+
+	color: rgb(102, 102, 102); 
+}
+
+
+
+.card-modal{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		overflow: hidden; 
+	 position: fixed;
+
+} 
+
+.modal {
+	display: none;
+	height: 100%;
+	left: 0;
+	outline: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1150;
+	background: rgba(141, 133, 133, 0.7);
+	/* opacity: 0.9; */
+} 
+
+.modal-active{
+	display: flex;
+}
+
+.modal-dialog {
+
+	border: 2px solid rgb(148, 148, 148);
+	border-radius: 10px;
+	color:  #444;
+	font-weight: 500;
+	padding: 10px 50px;
+	pointer-events: none;
+   position: relative;
+}
+
+.modal-dialog-centered{
+
+	background-clip: padding-box;
+	
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 0.3rem;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	pointer-events: auto;
+	position: relative;
+
+	border: 2px solid rgb(148, 148, 148);
+	border-radius: 10px;
+	font-weight: 500;
+	padding: 10px 50px;
+	background-color: #fff;
+	max-width: 660px;
+
+}
+
+.modal-header {
+	/* border:1px solid #444; */
+	display: flex;
+	justify-content: space-between;
+	font-size: 36px;
+}
+.modal-header-btn {
+	cursor: pointer;
+}
+.form__priority {
+	width:200px;
+	height: 45px;
+}
+#last-vists {
+	width: 200px;
+}
+#date-vists {
+	width: 200px;
+}
+.js-modal-container {
+	overflow: hidden;
+	position:fixed;
+}
+.hidden {
+	display: none;
+}
+.error {
+	color: red;
+	font-size: 20px;
+}
