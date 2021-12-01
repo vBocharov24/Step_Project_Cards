@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<section class="section">
+		<div id='root'>
+			<div class="section-header">
+				<img src="./img/logo1.jpeg " width="50px" height="50px" alt="logo">
+				<p class="header-title">Welcome <span id='username'></span></p>
+				<div id="header-actions" class="section-header-btn"></div>
+			</div>
+			<div>
+				<div class="box-filter"></div>
+			</div>
+		</div>
+
+		<div>
+			<p class="card-title">Clients cards</p>
+			<div class="card-visit_box">
+				<div id="card-visit"></div>
+			</div>
+			<div class="no-visit-box">
+				<p id="no-cards" class="no-visits hidden">No visits</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="js-modal-container"></div>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="module" src="./modules/main.js"></script>
+</body>
+</html>
